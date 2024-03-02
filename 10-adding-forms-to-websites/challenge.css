@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(213, 244, 255);
+  font-family: sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+form {
+  width: 35rem;
+  margin: auto;
+  background-color: rgb(235, 255, 254);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(82, 82, 82, 0.5);
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  color: rgb(55, 55, 96);
+  font-weight: 600;
+  margin: 0.25rem 0;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(101, 101, 136);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(186, 192, 223, 0.566);
+  outline: 1px solid rgb(145, 206, 255);
+}
+
+textarea {
+  resize: none;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  border: 1px solid rgb(70, 120, 155);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-filled {
+  background-color: rgb(70, 120, 155);
+  color: #fff;
+}
+
+.btn-filled:hover {
+  background-color: rgba(70, 120, 155, 0.7);
+  color: #fff;
+}
+
+.btn-empty {
+  background-color: transparent;
+  color: rgb(70, 120, 155);
+}
+
+.btn-empty:hover {
+  background-color: rgba(70, 120, 155, 0.2);
+}
+
+.radios input,
+.terms input {
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 0 0.5rem 0 0;
+}
+
+.radios li,
+.terms {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.radios label {
+  margin: 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}

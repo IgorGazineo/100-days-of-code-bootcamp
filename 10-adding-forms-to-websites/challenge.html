@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Challenge</title>
+    <link rel="stylesheet" href="challenge.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your Name</label>
+              <input
+                type="text"
+                id="user-name"
+                name="username"
+                required
+                minlength="5"
+              />
+            </li>
+            <li>
+              <label for="user-email">Your E-Mail Address</label>
+              <input type="email" id="user-email" name="useremail" required />
+            </li>
+            <li>
+              <label for="user-number">Your Phone Number</label>
+              <input
+                type="tel"
+                id="user-number"
+                name="usernumber"
+                minlength="5"
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="user-msg">Your Message</label>
+          <textarea name="usermessage" id="user-msg" rows="6"></textarea>
+        </section>
+
+        <section>
+          <label for="user-feedback">How did you find us?</label>
+          <select name="feedback" id="user-feedback">
+            <option value="web">Web Search</option>
+            <option value="word-of-mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul class="radios">
+            <li>
+              <input
+                type="radio"
+                name="reply"
+                id="call-reply"
+                value="phone-call"
+                required
+              />
+              <label for="call-reply">Call me</label>
+            </li>
+            <li>
+              <input type="radio" name="reply" id="email-reply" required />
+              <label for="email-reply">Send me an email</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="reply"
+                id="no-reply"
+                value="do-not-reply"
+                required
+              />
+              <label for="no-reply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="terms">
+          <input type="checkbox" name="terms" id="terms" required />
+          <label for="terms">Accept Terms</label>
+        </section>
+
+        <section class="btns">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
