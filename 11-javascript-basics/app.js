@@ -7,4 +7,16 @@ let job = {
   salary: 50000,
 };
 
-alert(hobbies[0]);
+let totalAdultYears;
+
+function calculateAdultYears(userAge) {
+  return userAge - 18;
+}
+
+totalAdultYears = calculateAdultYears(age);
+alert(totalAdultYears);
+
+age = 45;
+totalAdultYears = calculateAdultYears(age);
+
+alert(totalAdultYears);
